@@ -15,7 +15,7 @@ import {AgeCalculator} from '../ageCalculator/ageCalculator';
       <p [innerHTML]="'Location ' + person.location.toString()"></p>
       <p *ng-if="person.nickname">Nick name: {{person.nickname}}</p>
       <input type="text" #name />
-      <button (click)="changeName(event, name)">Change name</button>
+      <button (click)="changeName($event, name)">Change name</button>
     </p>
   `,
   directives: [coreDirectives]
@@ -25,8 +25,13 @@ export class PersonShower {
   age: number;
 
   constructor(public ageCalculator: AgeCalculator) {   
-    debugger;
-    // this.age = this.ageCalculator.calculate(this.person);
+    this.person = {
+      name: 'Martin Gonto',
+      location: 'SF',
+      nickname: '@mgonto',
+      yearBorn: 1989
+    };
+    this.age = this.ageCalculator.calculate(this.person);
   }
 
   changeName(event, name) {
