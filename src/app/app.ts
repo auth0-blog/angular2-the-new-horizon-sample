@@ -6,10 +6,10 @@ import {PersonShower} from '../personShower/personShower';
 let template = require('./app.html');
 
 @Component({
-  selector: 'app',
-  directives: [PersonShower]
+  selector: 'app'
 })
 @View({
+  directives: [PersonShower],
   template:`${template}`
 })
 export class App {
