@@ -1,7 +1,7 @@
 {
-  "name": "angular2-full-app-demo",
+  "name": "angular2-the-new-horizon",
   "version": "0.0.0",
-  "description": "This is a sample that shows how to add authentication to an Angular 2 (ng2) app",
+  "description": "Learn all the Angular 2 concepts with a really small app by @auth0",
   "main": "",
   "scripts": {
     "start": "webpack-dev-server --inline -d --colors --display-error-details --display-cached --port 3000",
