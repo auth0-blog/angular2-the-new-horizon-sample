@@ -25,12 +25,11 @@ export class PersonShower {
   age: number;
 
   constructor(public ageCalculator: AgeCalculator) {   
-    this.person = {
-      name: 'Martin Gonto',
-      location: 'SF',
-      nickname: '@mgonto',
-      yearBorn: 1989
-    };
+    
+  }
+
+  onChange(changes) {
+    let person = changes.person.currentValue;
     this.age = this.ageCalculator.calculate(this.person);
   }
 
