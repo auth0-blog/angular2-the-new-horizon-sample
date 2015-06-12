@@ -2,6 +2,10 @@
 
 This is the sample for the [talk Angular 2: The new horizon](http://mgonto.github.io/angular2-the-new-horizon/) done at [jQuerySF](http://jquerysf.com/) by [@mgonto](http://twitter.com/mgonto)
 
+## Running it
+
+Just install `node` and run `npm install` and then `npm start` :boom:.
+
 ## Concepts
 
 In this repository you can learn the following concepts
