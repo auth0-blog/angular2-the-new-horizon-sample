@@ -12,7 +12,7 @@ import {AgeCalculator} from '../ageCalculator/ageCalculator';
     <p>
       <p>Name: {{person.name}}</p>
       <p>Age: {{age}}</p>
-      <p [innerHTML]="'Location ' + person.location.toString()"></p>
+      <p [inner-html]="'Location ' + person.location.toString()"></p>
       <p *ng-if="person.nickname">Nick name: {{person.nickname}}</p>
       <input type="text" #name />
       <button (click)="changeName($event, name)">Change name</button>
